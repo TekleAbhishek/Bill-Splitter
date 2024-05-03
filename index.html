@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill SplitUp</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Bill Split Up</h1>
+        <input type="text" id="billAmount" placeholder="Enter the Bill Amount">
+        <br><br>
+        <input type="text" id="noOfpersons" placeholder="Enter the no of persons">
+        <br><br>
+        <p id="cgst">CGST: </p>
+        <P id="sgst">SGST: </P>
+        <input type="checkbox" id="discount" onclick="Discount()"><span>Online Payment(Get 5% discount by paying through Online)</span>
+        <input type="text" id="billsplitup" placeholder="Output">
+        <br><br>
+        <button id="btn" onclick="SplitBill()">Split the Bill</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
